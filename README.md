@@ -17,7 +17,7 @@
 
 # 2) API Documentation for the person data service in embl-ebi
 
-**API Number : **: 1
+##API Number : 1
 
 **API Description : **: API to store the person data 
 
@@ -70,7 +70,7 @@
                             favouriteColour >= 3 and favouriteColour <= 60 (It is configurable in constants file as of now - we can move this to property file)
                             age >= 1 (It is configurable in constants file as of now - we can move this to property file)
                             
-**API Number : **: 2
+##API Number : 2
 
 **API URL**: http://localhost:8080/person/get/{personId}
 
@@ -105,7 +105,7 @@
                  2) Validation errors on the personId 
                  
                  
-**API Number : **: 3
+## API Number : 3
 
 **API URL**: http://localhost:8080/person/get?sort={sort_field}&from={from_value}&size={data_required_count}
 
@@ -164,7 +164,7 @@ iii) Get all with sort fields like (sort by firstName / lastName / age / favouri
                  4) Pagination 
                  5) Sorting with Pagination 
                                                   
-**API Number : **: 4
+##API Number : 4
 
 **API Description : **: API to Update the person data 
 
@@ -207,7 +207,7 @@ iii) Get all with sort fields like (sort by firstName / lastName / age / favouri
                  3) Validation on personId field
                  
 
-**API Number : **: 5
+##API Number : 5
 
 **API URL**: http://localhost:8080/person/delete/{personId}
 
@@ -235,7 +235,7 @@ iii) Get all with sort fields like (sort by firstName / lastName / age / favouri
                  1) Delete the person data, If the personId is valid and available in datastore
                  2) Validation errors on the personId 
                  
-**API Number : **: 6
+##API Number : 6
 
 **API URL**: http://localhost:8080/person/deleteall
 
@@ -263,4 +263,48 @@ iii) Get all with sort fields like (sort by firstName / lastName / age / favouri
                  1) Delete all the person data
                  2) Validation errors on the personId 
                  
-                 
+# 3) Test Coverage Report 
+
+# We have 83.5% test coverage report in this project currently 
+
+![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/testcoveragereport.PNG)
+
+# We have 27 tests with possible cases for the above use case
+
+![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/testcase1.PNG)
+
+# 4) Deployment 
+
+## Prerequisite 
+
+1) Docker should be installed in the machine for container deployment
+2) Maven should be installed in the machine for building the project 
+3) Git for clone 
+
+## Build the project (Its already built - Try If you are interested in building again) 
+
+1) Go to the pom.xml folder and run the maven command like below 
+
+mvn clean install 
+
+## Docker Deployment 
+
+1) Clone this project repository : git clone https://github.com/Harrymsys/embl-ebi.git (Currently added as public repository - I will remove it after you guys downloaded this project) 
+2) Go to the Docker file location : 
+
+![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/DockerfileLocation.PNG)
+
+3) Build the docker image 
+
+![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/builddockerimage.PNG)
+
+4) Run the docker image 
+
+![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/runningdocker.PNG)
+
+
+## To run with Java command, find the jar under the target folder and run it directly 
+
+java -jar target/ebi-0.0.1-SNAPSHOT.jar 
+
+
