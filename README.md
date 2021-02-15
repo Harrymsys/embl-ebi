@@ -57,12 +57,12 @@
                       
                       where the 13, 14, 15 are the unique Ids created for the added data 
 
-**Possible Status Codes **: 
+**Possible Status Codes**: 
                      200 - Success 
                      500 - Internal Server Error 
                      General HTTP Errors like 400, 415 etc., 
                      
-**Possible Cases **:           
+**Possible Cases**:           
                  1) Store single or multiple person data 
                  2) Validation on firstName, lastName, age and favouriteColour field 
                             firstName >= 3 and firstName <= 60 (It is configurable in constants file as of now - we can move this to property file)
@@ -95,12 +95,12 @@
                       
                       
 
-**Possible Status Codes **: 
+**Possible Status Codes**: 
                      200 - Success 
                      500 - Internal Server Error 
                      General HTTP Errors like 400, 415 etc., 
                      
-**Possible Cases **:           
+**Possible Cases**:           
                  1) Get the person data, If the personId is valid and available in datastore
                  2) Validation errors on the personId 
                  
@@ -152,12 +152,12 @@ iii) Get all with sort fields like (sort by firstName / lastName / age / favouri
                       
                       
 
-**Possible Status Codes **: 
+**Possible Status Codes**: 
                      200 - Success 
                      500 - Internal Server Error 
                      General HTTP Errors like 400, 415 etc., 
                      
-**Possible Cases **:           
+**Possible Cases**:           
                  1) Get all the person data
                  2) Validation on sort fields (providing the non available fields) 
                  3) Sorting on different fields  
@@ -192,12 +192,12 @@ iii) Get all with sort fields like (sort by firstName / lastName / age / favouri
 **Sample Response**: 
                       Person data is updated successfully to the data store, personId : 2
 
-**Possible Status Codes **: 
+**Possible Status Codes**: 
                      200 - Success 
                      500 - Internal Server Error 
                      General HTTP Errors like 400, 415 etc., 
                      
-**Possible Cases **:           
+**Possible Cases**:           
                  1) Update single data 
                  2) Validation on firstName, lastName, age and favouriteColour field 
                             firstName >= 3 and firstName <= 60 (It is configurable in constants file as of now - we can move this to property file)
@@ -226,12 +226,12 @@ iii) Get all with sort fields like (sort by firstName / lastName / age / favouri
                       
                       
 
-**Possible Status Codes **: 
+**Possible Status Codes**: 
                      200 - Success 
                      500 - Internal Server Error 
                      General HTTP Errors like 400, 415 etc., 
                      
-**Possible Cases **:           
+**Possible Cases**:           
                  1) Delete the person data, If the personId is valid and available in datastore
                  2) Validation errors on the personId 
                  
@@ -254,12 +254,12 @@ iii) Get all with sort fields like (sort by firstName / lastName / age / favouri
                       
                       
 
-**Possible Status Codes **: 
+**Possible Status Codes**: 
                      200 - Success 
                      500 - Internal Server Error 
                      General HTTP Errors like 400, 415 etc., 
                      
-**Possible Cases **:           
+**Possible Cases**:           
                  1) Delete all the person data
                  2) Validation errors on the personId 
                  
