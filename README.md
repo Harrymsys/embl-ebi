@@ -302,5 +302,6 @@ mvn clean install
 
 ![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/runningdocker.PNG)
 
-
+## TODO 
+In this project, I covered most of the work but still I am not able to cover few items due to time constraints, I would like to discuss in person on technical discussions. 
 
