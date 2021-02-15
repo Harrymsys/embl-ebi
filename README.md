@@ -303,8 +303,4 @@ mvn clean install
 ![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/runningdocker.PNG)
 
 
-## To run with Java command, find the jar under the target folder and run it directly 
-
-java -jar target/ebi-0.0.1-SNAPSHOT.jar 
-
 
