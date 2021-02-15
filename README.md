@@ -13,7 +13,7 @@
 #### Build Tool - Maven - (Version - 3.6.3)
 
 # 1) Class Diagram for this project 
-![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/ClassDiagram.jpg)
+![](https://github.com/Harrymsys/embl-ebi/blob/main/outputs/classdiagram_png.png)
 
 # 2) API Documentation for the person data service in embl-ebi
 
